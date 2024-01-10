@@ -4,6 +4,7 @@
 
 type Result = MyExclude<"a" | "b" | "c", "a">; // 'b' | 'c'
 
+// --------------Solution--------------
 type MyExclude<T extends string, K extends T> = T extends K ? never : T;
 
 export {};

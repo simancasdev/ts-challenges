@@ -3,4 +3,7 @@
 
 type Result = Push<[1, 2], "3">; // [1, 2, '3']
 
+// --------------Solution--------------
 type Push<T extends (string | number)[], K extends `${number}`> = [...T, K];
+
+export {};

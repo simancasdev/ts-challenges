@@ -19,3 +19,5 @@ const todo: TodoPreview = {
 type MyOmit<T, L extends keyof T> = {
   [K in keyof T as K extends L ? never : K]: T[K];
 };
+
+export {};

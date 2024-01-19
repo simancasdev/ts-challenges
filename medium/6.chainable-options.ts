@@ -13,7 +13,7 @@ declare const config: Chainable;
 const result = config
   .option("foo", 123)
   .option("name", "type-challenges")
-  .option("bar", { value: "Hello World" })
+  .option("bar", {value: "Hello World"})
   .get();
 
 const a: typeof result = {
@@ -32,7 +32,6 @@ interface Result {
     value: string;
   };
 }
-
 
 // --------------Solution--------------
 type Chainable<T = {}> = {

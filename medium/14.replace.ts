@@ -6,7 +6,6 @@
 type replaced = Replace<"types are fun!", "fun", "awesome">; // expected to be 'types are awesome!'
 
 // --------------Solution--------------
-
 type Replace<
   S extends string,
   L extends string,
